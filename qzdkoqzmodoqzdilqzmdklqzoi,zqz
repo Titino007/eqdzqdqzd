@@ -1,0 +1,2217 @@
+local Rayfield = loadstring(game:HttpGet('https://pastebin.com/raw/KHAdBjdX'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Project Kitten  v0.0.1.6",
+   LoadingTitle = "Made By Lyynd#0009 and Jehno#4316 ",
+   LoadingSubtitle = "Loading Script Pls wait...",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = projectKittenSave, -- Create a custom folder for your hub/game
+      FileName = "Projectkitten Hub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "EV9SkQ3bPx", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Sirius Hub",
+      Subtitle = "Key System",
+      Note = "Join the discord (discord.gg/sirius)",
+      FileName = "SiriusKey",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "Hello"
+   }
+})
+
+Rayfield:Notify({
+   Title = "loading The Script",
+   Content = "This Take about 10 sec don't worry",
+   Duration = 10,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Close",
+         Callback = function()
+         print("Welcome to the best script of spts endless")
+         end
+   },
+},
+})
+
+
+
+local Tab = Window:CreateTab("Farm Tab", 4483362458) -- Title, Image
+
+local Label = Tab:CreateLabel("don't toggle everything at the same time retard")
+
+local Section = Tab:CreateSection("Training")
+
+local isToggled = false
+local connection = nil
+
+local function executeCode()
+    local args = {
+        [1] = {
+            [1] = "Add_MS_Request"
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "Train Speed",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                executeCode()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function executeAddFSRequest()
+    local args = {
+        [1] = {
+            [1] = "Add_FS_Request"
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "Train Fist",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                executeAddFSRequest()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function executeAddJFRequest()
+    local args = {
+        [1] = {
+            [1] = "Add_JF_Request"
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "Train Jump Power",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                executeAddJFRequest()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+
+local isToggled = false
+local connection = nil
+
+local function equipMeditateTool()
+    local tool = game:GetService("Players").LocalPlayer.Backpack.Meditate
+    tool.Parent = game:GetService("Workspace")[game.Players.LocalPlayer.Name]
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "Train Psychic",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipMeditateTool()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function executeBTRequest()
+    local args = {
+        [1] = {
+            [1] = "+BT1"
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "Train Body Toughness",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                executeBTRequest()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+
+local Section = Tab:CreateSection("Fps Related Stuff")
+
+local Button = Tab:CreateButton({
+    Name = "Fps Boost",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ku9tWmWq"))()
+        wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/hpTa13PY"))()
+        wait(0.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/6cAbyQjs"))()
+        wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zSuPq2zm"))()
+        wait(0.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/0werDRbb"))()
+        wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/w0zpSecG"))()
+        wait(0.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/7g1vkmEJ"))()
+        wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/YCLJnNZA"))()
+        wait(0.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/Eax1rzYw"))()
+        wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/JvXXZNMD"))()
+        wait(0.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/bERXPxPR"))()
+        wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/fsgLV2fY"))()
+        wait(0.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/azgLdQ9S"))()
+    end,
+})
+
+-- Define a variable to track the state of the toggle
+local is3dRenderingEnabled = true
+
+-- Define a function to toggle 3D rendering
+local function toggle3dRendering(enabled)
+    is3dRenderingEnabled = enabled
+    game:GetService("RunService"):Set3dRenderingEnabled(is3dRenderingEnabled)
+end
+
+-- Create a GUI toggle
+local toggle = Tab:CreateToggle({
+    Name = "Turn Off 3D Rendering",
+    CurrentValue = is3dRenderingEnabled,
+    Callback = function(enabled)
+        toggle3dRendering(enabled)
+    end,
+})
+
+
+local Tab = Window:CreateTab("auto equip weight", 4483362458) -- Title, Image
+
+local isToggled = false
+local connection = nil
+
+local function equipWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 1
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "Auto Equip Weight 100LB",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 2
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 1TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 3
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 4
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 100TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 5
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 1KTON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 6
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10K-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 7
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 100K-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 8
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 1M-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 9
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10M-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 10
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 1B-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 11
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 100B-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 12
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10T-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 13
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 1Qa-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 14
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 100Qa-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 15
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10Qi-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 16
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 1Sx-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 17
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 100Sx-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 18
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10Sp-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 19
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10Oc-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 20
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10No-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 21
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10Dc-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 22
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10Td-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 23
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10Qad-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+local isToggled = false
+local connection = nil
+
+local function equipHeavyWeight()
+    local args = {
+        [1] = {
+            [1] = "EquipWeight_Request",
+            [2] = 24
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+local Toggle = Tab:CreateToggle({
+    Name = "auto equip weight 10Qid-TON",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isToggled = Value
+        if isToggled then
+            connection = game:GetService("RunService").Heartbeat:Connect(function()
+                equipHeavyWeight()
+            end)
+        else
+            if connection then
+                connection:Disconnect()
+            end
+        end
+    end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Tab = Window:CreateTab("Utility-Tab", 4483362458)
+
+local Section = Tab:CreateSection("AutoRespawn")
+
+local Paragraph = Tab:CreateParagraph({Title = "", Content = "Once you toggle AutoRespawn, it is recommended that you do not untoggle it. If you do die and need to respawn, attempting to untoggle AutoRespawn may cause you to become stuck on the death screen. In this case, you will need to rejoin the game to resolve the issue. AutoRespawn can be useful for players who want to go AFK."})
+
+local deathListener = nil
+
+local function onPlayerDied()
+    
+    wait(1)
+   -- Respawn the player after waiting for 1.5 seconds
+   local args = {
+       [1] = {
+           [1] = "Respawn"
+       }
+   }
+   game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+   wait(1)
+
+   -- Remove the old camera and create a new one for the player
+   local currentCamera = workspace.CurrentCamera
+   currentCamera.CameraType = Enum.CameraType.Custom
+   currentCamera.CameraSubject = game.Players.LocalPlayer.Character.HumanoidRootPart
+   currentCamera.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   wait(1)
+   currentCamera.CameraType = Enum.CameraType.Custom
+   currentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+
+   -- Remove the IntroGui from the player's PlayerGui
+   game.Players.LocalPlayer.PlayerGui.IntroGui:Destroy()
+
+   -- Remove the Blur effect from the Lighting service
+   game:GetService("Lighting").Blur:Destroy()
+end
+
+local Toggle = Tab:CreateToggle({
+   Name = "AutoRespawn  1sec will respawn u in 1sec",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+       if Value then
+           -- Create a KenPart and add a death listener
+           local kenPart = Instance.new("Part")
+           kenPart.Name = "KenPart"
+           kenPart.Parent = game.Players.LocalPlayer.Character
+
+           deathListener = game.Players.LocalPlayer.Character.Humanoid.Died:Connect(onPlayerDied)
+
+           -- Loop to continuously create the KenPart and add a death listener
+           while true do
+               wait(1)
+
+               -- Disconnect the previous death listener
+               if deathListener then
+                   deathListener:Disconnect()
+               end
+
+               -- Create a new KenPart and add a new death listener
+               kenPart = Instance.new("Part")
+               kenPart.Name = "KenPart"
+               kenPart.Parent = game.Players.LocalPlayer.Character
+
+               deathListener = game.Players.LocalPlayer.Character.Humanoid.Died:Connect(onPlayerDied)
+           end
+       else
+           -- Remove the death listener
+           if deathListener then
+               deathListener:Disconnect()
+           end
+       end
+   end,
+})
+
+local deathListener = nil
+
+
+local function onPlayerDied()
+    
+    wait(5)
+   -- Respawn the player after waiting for 1.5 seconds
+   local args = {
+       [1] = {
+           [1] = "Respawn"
+       }
+   }
+   game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+   wait(1)
+
+   -- Remove the old camera and create a new one for the player
+   local currentCamera = workspace.CurrentCamera
+   currentCamera.CameraType = Enum.CameraType.Custom
+   currentCamera.CameraSubject = game.Players.LocalPlayer.Character.HumanoidRootPart
+   currentCamera.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   wait(1)
+   currentCamera.CameraType = Enum.CameraType.Custom
+   currentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+
+   -- Remove the IntroGui from the player's PlayerGui
+   game.Players.LocalPlayer.PlayerGui.IntroGui:Destroy()
+
+   -- Remove the Blur effect from the Lighting service
+   game:GetService("Lighting").Blur:Destroy()
+end
+
+local Toggle = Tab:CreateToggle({
+   Name = "AutoRespawn  5sec will respawn u in 5sec",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+       if Value then
+           -- Create a KenPart and add a death listener
+           local kenPart = Instance.new("Part")
+           kenPart.Name = "KenPart"
+           kenPart.Parent = game.Players.LocalPlayer.Character
+
+           deathListener = game.Players.LocalPlayer.Character.Humanoid.Died:Connect(onPlayerDied)
+
+           -- Loop to continuously create the KenPart and add a death listener
+           while true do
+               wait(5)
+
+               -- Disconnect the previous death listener
+               if deathListener then
+                   deathListener:Disconnect()
+               end
+
+               -- Create a new KenPart and add a new death listener
+               kenPart = Instance.new("Part")
+               kenPart.Name = "KenPart"
+               kenPart.Parent = game.Players.LocalPlayer.Character
+
+               deathListener = game.Players.LocalPlayer.Character.Humanoid.Died:Connect(onPlayerDied)
+           end
+       else
+           -- Remove the death listener
+           if deathListener then
+               deathListener:Disconnect()
+           end
+       end
+   end,
+})
+
+local deathListener = nil
+
+
+
+local function onPlayerDied()
+   -- Respawn the player after waiting for 1.5 seconds
+   wait(10)
+   local args = {
+       [1] = {
+           [1] = "Respawn"
+       }
+   }
+   game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+   wait(10)
+
+   -- Remove the old camera and create a new one for the player
+   local currentCamera = workspace.CurrentCamera
+   currentCamera.CameraType = Enum.CameraType.Custom
+   currentCamera.CameraSubject = game.Players.LocalPlayer.Character.HumanoidRootPart
+   currentCamera.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   wait(10)
+   currentCamera.CameraType = Enum.CameraType.Custom
+   currentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+
+   -- Remove the IntroGui from the player's PlayerGui
+   game.Players.LocalPlayer.PlayerGui.IntroGui:Destroy()
+
+   -- Remove the Blur effect from the Lighting service
+   game:GetService("Lighting").Blur:Destroy()
+end
+
+local Toggle = Tab:CreateToggle({
+   Name = "AutoRespawn  10sec will respawn u in 10sec",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+       if Value then
+           -- Create a KenPart and add a death listener
+           local kenPart = Instance.new("Part")
+           kenPart.Name = "KenPart"
+           kenPart.Parent = game.Players.LocalPlayer.Character
+
+           deathListener = game.Players.LocalPlayer.Character.Humanoid.Died:Connect(onPlayerDied)
+
+           -- Loop to continuously create the KenPart and add a death listener
+           while true do
+               wait(1)
+
+               -- Disconnect the previous death listener
+               if deathListener then
+                   deathListener:Disconnect()
+               end
+
+               -- Create a new KenPart and add a new death listener
+               kenPart = Instance.new("Part")
+               kenPart.Name = "KenPart"
+               kenPart.Parent = game.Players.LocalPlayer.Character
+
+               deathListener = game.Players.LocalPlayer.Character.Humanoid.Died:Connect(onPlayerDied)
+           end
+       else
+           -- Remove the death listener
+           if deathListener then
+               deathListener:Disconnect()
+           end
+       end
+   end,
+})
+
+
+
+local Section = Tab:CreateSection("TeleportAll(KillAll)")
+
+local Paragraph = Tab:CreateParagraph({Title = "", Content = "When you use the Teleport Player Feature, other players will be able to teleport to your location without any consequences, but if you attack and kill them, it will result in their actual death. To stop other players from teleporting to you, simply rejoin the game."})
+
+local isTeleporting = false
+
+local function teleportPlayers()
+    while isTeleporting do
+        wait(0.0000000000000000001)
+        local localPos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
+        for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+            if player ~= game:GetService("Players").LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                local pos = player.Character.HumanoidRootPart.Position
+                if (localPos - pos).Magnitude <= 100 then
+                    local safezoneShield = player.Character:FindFirstChild("SafeZoneShield")
+                    if not safezoneShield then
+                        player.Character.HumanoidRootPart.CFrame = CFrame.new(localPos)
+                        safezoneShield = player.Character:FindFirstChild("SafeZoneShield")
+                        if safezoneShield then
+                            safezoneShield:Destroy()
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+local Toggle = Tab:CreateToggle({
+   Name = "Tp all player in a radius of 100 meter",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      if Value == true then
+         isTeleporting = true
+         teleportPlayers()
+      else
+         isTeleporting = false
+         for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+            if player ~= game:GetService("Players").LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+               local pos = player.Character.HumanoidRootPart.Position
+               player.Character.HumanoidRootPart.CFrame = CFrame.new(pos)
+            end
+         end
+      end
+   end,
+})
+
+
+
+
+local isTeleporting = false
+
+local function teleportPlayers()
+    while isTeleporting do
+        wait(0.0000000000000000001)
+        for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+            if player ~= game:GetService("Players").LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                local safezoneShield = player.Character:FindFirstChild("SafeZoneShield")
+                if not safezoneShield then
+                    local hasBackpack = player:FindFirstChild("Backpack") and player.Backpack:FindFirstChild("Weight")
+                    if not hasBackpack then
+                        local pos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
+                        player.Character.HumanoidRootPart.CFrame = CFrame.new(pos)
+                        safezoneShield = player.Character:FindFirstChild("SafeZoneShield")
+                        if safezoneShield then
+                            safezoneShield:Destroy()
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+local Toggle = Tab:CreateToggle({
+   Name = "TeleportAllNoobs(theyneedtobeoutofspawn)",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      if Value == true then
+         isTeleporting = true
+         teleportPlayers()
+      else
+         isTeleporting = false
+         for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+            if player ~= game:GetService("Players").LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+               local pos = player.Character.HumanoidRootPart.Position
+               player.Character.HumanoidRootPart.CFrame = CFrame.new(pos)
+            end
+         end
+      end
+   end,
+})
+
+
+local Toggle = Tab:CreateToggle({
+    Name = "TeleportAllVilain of tier-1",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        if Value then
+            teleportHeroes = true
+            while teleportHeroes do
+                wait(0.0000000000000000001)
+                for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+                    if player ~= game:GetService("Players").LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                        local leaderstats = player:FindFirstChild("leaderstats")
+                        if leaderstats then
+                            local statusValue = leaderstats:FindFirstChild("Status")
+                            if statusValue and statusValue.Value == "-1|Lawbreaker" then
+                                local pos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
+                                player.Character.HumanoidRootPart.CFrame = CFrame.new(pos)
+                                local safezoneShield = player.Character:FindFirstChild("SafeZoneShield")
+                                if safezoneShield then
+                                    safezoneShield:Destroy()
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        else
+            teleportHeroes = false
+        end
+    end,
+})
+
+local Toggle = Tab:CreateToggle({
+    Name = "TeleportAllHeroes of tier-1",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        if Value then
+            teleportHeroes = true
+            while teleportHeroes do
+                wait(0.0000000000000000001)
+                for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+                    if player ~= game:GetService("Players").LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                        local leaderstats = player:FindFirstChild("leaderstats")
+                        if leaderstats then
+                            local statusValue = leaderstats:FindFirstChild("Status")
+                            if statusValue and statusValue.Value == "1|Protector" then
+                                local pos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
+                                player.Character.HumanoidRootPart.CFrame = CFrame.new(pos)
+                                local safezoneShield = player.Character:FindFirstChild("SafeZoneShield")
+                                if safezoneShield then
+                                    safezoneShield:Destroy()
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        else
+            teleportHeroes = false
+        end
+    end,
+})
+
+
+local Section = Tab:CreateSection("Utility")
+
+local KickPlayerIds = {
+   64236427,
+   696224584,
+   1809938170,
+   2592410468,
+   107288341,
+}
+
+local player = game.Players.LocalPlayer
+
+local function CheckForAdmin()
+   for _, p in ipairs(game:GetService("Players"):GetPlayers()) do
+      if table.find(KickPlayerIds, p.UserId) then
+         if p ~= player then
+            player:Kick("An admin has joined your game and you have been kicked.")
+            break -- exit the loop once a match is found
+         end
+      end
+   end
+end
+
+local Toggle = Tab:CreateToggle({
+   Name = "AutoModKick",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      if Value then
+         -- start checking for admins when the toggle is turned on
+         CheckForAdminLoop = game:GetService("RunService").Heartbeat:Connect(function()
+            CheckForAdmin()
+         end)
+      else
+         -- stop checking for admins when the toggle is turned off
+         if CheckForAdminLoop then
+            CheckForAdminLoop:Disconnect()
+            CheckForAdminLoop = nil
+         end
+      end
+   end,
+})
+
+local vu = game:GetService("VirtualUser")
+
+local Button = Tab:CreateButton({
+   Name = "Anti-AFK",
+   Callback = function()
+       game:GetService("Players").LocalPlayer.Idled:Connect(function()
+           vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+           wait(1)
+           vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+       end)
+       print("Anti-AFK script has been activated.")
+   end,
+})
+
+
+
+
+local Tab = Window:CreateTab("Teleport Tab", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("SafeZone and more")
+
+local Dropdown = Tab:CreateDropdown({
+    Name = "Teleport Locations",
+    Options = {"SafeZone", "Quest", "Leader Board" },
+    CurrentOption = {"Option 1"},
+    MultipleOptions = false,
+    Flag = "TeleportDropdown",
+    Callback = function(Option)
+        if Option[1] == "SafeZone" then
+            local pos = Vector3.new(447.049, 249.19, 874.525)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "Quest" then
+            local pos = Vector3.new(506.579, 250.188, 898.646)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "Leader Board" then
+            local pos = Vector3.new(-754.177, 249.22, 747.124)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+    end,
+})
+
+
+local Section = Tab:CreateSection("Fist Training Area")
+
+
+local isLoopTeleportActive = false
+
+local Toggle = Tab:CreateToggle({
+    Name = "AutoLoopTp|Fist-Area",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isLoopTeleportActive = Value
+        if isLoopTeleportActive then
+            doLoopTeleport1()
+        end
+    end,
+})
+
+
+local Dropdown = Tab:CreateDropdown({
+   Name = "Teleport Fist Area",
+   Options = {"x10", "x100", "1B+", "100B+", "10T+", "1Qa+", "100Qa+", "15Qi", "2.5Sx+", "1Sp+", "500Sp+", "250Oc+", "150No+", "55Dc+", "30Ud+", "11Dd+"},
+   CurrentOption = {""},
+   MultipleOptions = false,
+   Flag = "TeleportDropdown",
+   Callback = function(Option)
+      -- Check if the selected option is "Rock x10 Strength"
+      if Option[1] == "x10" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(407.900024, 260.65332, 979.379822)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+      
+      -- Check if the selected option is "Crystal x100 strength"
+      if Option[1] == "x100" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(-2276.28, 1974.2, 1051.65)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+      
+      -- Check if the selected option is "Blue Orb (Require 1B+ Strength)"
+      if Option[1] == "1B+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(1176.43018, 4776.36084, -2293.08911)
+         local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+      end
+      
+      -- Check if the selected option is "Green Orb Require 100B+ Strength"
+      if Option[1] == "100B+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(1379.9, 9272.42, 1648)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "10T+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(-367.173, 15735.2, -11.2265)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "1Qa+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(-4057.32, 282.779, -1831.69)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+
+      -- Check if the selected option is "Sun Require 10T+ Strength"
+      if Option[1] == "100Qa+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(1634.88, 4607.27, 2263.19)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "15Qi" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(-180.493, 228.497, 1133.06)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "2.5Sx+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(-2814.15, 24864.9, -232.28)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "1Sp+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(-2099.7, 24913.4, -207.567)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "500Sp+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(254.24, 260.863, 1019.11)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "250Oc+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(1851.91, 162.875, -3447.66)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "150No+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(1659.63, 79.129, 2243.79)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "55Dc+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(864.544, 466.472, -2397.81)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "30Ud+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(1602.32, 327.108, -3194.25)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+
+      if Option[1] == "11Dd+" then
+         -- Teleport the player to the specified location
+         local pos = Vector3.new(-988.615, -2028.62, -162.604)
+         local cf = CFrame.new(pos.x, pos.y, pos.z)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+      end
+   end,
+})
+
+function doLoopTeleport1()
+    while isLoopTeleportActive do
+        local currentOption = Dropdown.CurrentOption
+        Dropdown:Set(currentOption)
+        wait(5)
+    end
+end
+
+local Section = Tab:CreateSection("Body Toughness Training Area")
+
+local isLoopTeleportActive = false
+
+local Toggle = Tab:CreateToggle({
+    Name = "AutoLoopTp|Body-Toughness-Area",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isLoopTeleportActive = Value
+        if isLoopTeleportActive then
+            doLoopTeleport3()
+        end
+    end,
+})
+
+local Dropdown = Tab:CreateDropdown({
+    Name = "Teleport Body-Toughness-Area",
+    Options = {"100+", "10000+", "100k+", "1M+", "10M+", "1B+", "100B+", "10T+", "1Qa+", "50Qa+", "5Qi+", "450Qi+", "40Sx+", "3Sp+", "250Sp+", "20Oc+", "2No+", "200No+", "15Dc+", "1Ud+", "250Ud+", "10Dd+", "1Td+"},
+    CurrentOption = {"Option 1"},
+    MultipleOptions = false,
+    Flag = "TeleportDropdown",
+    Callback = function(Option)
+        if Option[1] == "100+" then
+            local pos = Vector3.new(367.012, 248.478, -444.984)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "10000+" then
+            local pos = Vector3.new(356.39, 265.608, -493.115)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "100k+" then
+            local pos = Vector3.new(1635.67, 257.987, 2247.51)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+        
+                if Option[1] == "1M+" then
+            local pos = Vector3.new(-2301.51, 1003.84, 1069.53)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+                end
+                
+                                if Option[1] == "10M+" then
+            local pos = Vector3.new(-1998.06, 878.476, -1964.02)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+                end
+        
+        if Option[1] == "1B+" then
+            local pos = Vector3.new(-250.575, 290.835, 979.104)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "100B+" then
+            local pos = Vector3.new(-278.697, 280.549, 991.981)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "10T+" then
+            local pos = Vector3.new(-278.582, 280.503, 1006.94)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "1Qa+" then
+            local pos = Vector3.new(-2309.44, 294.596, -2285.49)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "50Qa+" then
+            local pos = Vector3.new(389.511, 234.698, -19.9097)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "5Qi+" then
+            local pos = Vector3.new(1709.61, 230.09, -614.247)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "450Qi+" then
+            local pos = Vector3.new(-0.566416, 172.619, -3382.64)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "40Sx+" then
+            local pos = Vector3.new(329.29, 234.646, -265.663)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "3Sp+" then
+            local pos = Vector3.new(853.129, 243.386, -2380.65)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "250Sp+" then
+            local pos = Vector3.new(-528.159, 249.668, -277.893)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "20Oc+" then
+            local pos = Vector3.new(-1988.02, 273.743, -1900.41)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "2No+" then
+            local pos = Vector3.new(-4132.11, 5039.03, -3480)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "200No+" then
+            local pos = Vector3.new(-127.048, 358.097, 203.806)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "15Dc+" then
+            local pos = Vector3.new(1498.72, 298.318, -3088.91)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "1Ud+" then
+            local pos = Vector3.new(-14.6391, -126.404, 1098.21)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "250Ud+" then
+            local pos = Vector3.new(-4133.05, 4889.94, -3480.65)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "10Dd+" then
+            local pos = Vector3.new(-2349.71, 5419.27, 1039.97)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "1Td+" then
+            local pos = Vector3.new(-9314.12, 31687.7, -19299.2)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+    end,
+})
+
+function doLoopTeleport3()
+    while isLoopTeleportActive do
+        local currentOption = Dropdown.CurrentOption
+        Dropdown:Set(currentOption)
+        wait(5)
+    end
+end
+
+
+
+local Section = Tab:CreateSection("Jump Force Training area")
+
+local isLoopTeleportActive = false
+
+local Toggle = Tab:CreateToggle({
+    Name = "AutoLoopTp|Jump-Power-Area",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isLoopTeleportActive = Value
+        if isLoopTeleportActive then
+            doLoopTeleport9()
+        end
+    end,
+})
+
+
+
+local Dropdown = Tab:CreateDropdown({
+    Name = "Jump-Power-Area",
+    Options = {"100T+", "5Qa+", "150Qa+", "5Qi+", "200Qi+", "10Sx+", "300Sx+", "15Sp+", "400Sp+"},
+    CurrentOption = {"Option 1"},
+    MultipleOptions = false,
+    Flag = "TeleportDropdown",
+    Callback = function(Option)
+        if Option[1] == "100T+" then
+            local pos = Vector3.new(606.537, 281.422, 520.649)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "5Qa+" then
+            local pos = Vector3.new(-18.1615, 285.615, -3052.92)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "150Qa+" then
+            local pos = Vector3.new(-359.652, 3655.57, -644.638)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+        
+                if Option[1] == "5Qi+" then
+            local pos = Vector3.new(-4133.1, 4926.72, -3480.76)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+        
+        if Option[1] == "200Qi+" then
+            local pos = Vector3.new(-4001.88, 14692.2, -3344.11)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "10Sx+" then
+            local pos = Vector3.new(-2956.1, 24603.9, -235.98)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "300Sx+" then
+            local pos = Vector3.new(883.332, 4221.76, -1918.84)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "15Sp+" then
+            local pos = Vector3.new(876.703, 440.945, -2778.2)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "400Sp+" then
+            local pos = Vector3.new(-2043.37, 15517.8, -1889.14)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+    end,
+})
+
+function doLoopTeleport9()
+    while isLoopTeleportActive do
+        local currentOption = Dropdown.CurrentOption
+        Dropdown:Set(currentOption)
+        wait(5)
+    end
+end
+
+
+local Section = Tab:CreateSection("Train Speed Movement area")
+
+local isLoopTeleportActive = false
+
+local Toggle = Tab:CreateToggle({
+    Name = "AutoLoopTp|Speed-Movement-Area",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isLoopTeleportActive = Value
+        if isLoopTeleportActive then
+            doLoopTeleport6()
+        end
+    end,
+})
+
+
+
+local Dropdown = Tab:CreateDropdown({
+    Name = "Speed-Movement-Area",
+    Options = {"100T+", "2.22Qa+", "60Qa+", "1.5Qi+", "40Qi+", "1Sx+", "25Sx+", "750Sx+", "15.5Sp+", "400Sp+", "10oc+"},
+    CurrentOption = {"Option 1"},
+    MultipleOptions = false,
+    Flag = "TeleportDropdown",
+    Callback = function(Option)
+        if Option[1] == "100T+" then
+            local pos = Vector3.new(-4055.41, 265.379, -1719.33)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "2.22Qa+" then
+            local pos = Vector3.new(1491.64, 263.564, -2376.19)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "60Qa+" then
+            local pos = Vector3.new(-3601.65, 5272.26, 2351.87)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+        
+                if Option[1] == "1.5Qi+" then
+            local pos = Vector3.new(-3652.06, 2220.2, -1310.7)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+        
+        if Option[1] == "40Qi+" then
+            local pos = Vector3.new(-226.335, 4230.93, 1905.59)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "1Sx+" then
+            local pos = Vector3.new(391.161, 253.873, 104.061)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "25Sx+" then
+            local pos = Vector3.new(-126.939, 429.48, 203.751)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "750Sx+" then
+            local pos = Vector3.new(884.394, 279.226, -3131.73)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "15.5Sp+" then
+            local pos = Vector3.new(-2900.81, 5370.03, -576.202)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+                if Option[1] == "400Sp+" then
+            local pos = Vector3.new(-2560.21, 5259.28, -543.45)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+                end
+    
+            if Option[1] == "10oc+" then
+            local pos = Vector3.new(-2563.1, 5259.99, -451.283)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+    end,
+})
+
+function doLoopTeleport6()
+    while isLoopTeleportActive do
+        local currentOption = Dropdown.CurrentOption
+        Dropdown:Set(currentOption)
+        wait(5)
+    end
+end
+
+
+
+
+
+
+
+
+local Section = Tab:CreateSection("Psychic Training Area")
+
+local isLoopTeleportActive = false
+
+local Toggle = Tab:CreateToggle({
+    Name = "AutoLoopTp|Psychic-Area",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        isLoopTeleportActive = Value
+        if isLoopTeleportActive then
+            doLoopTeleport4()
+        end
+    end,
+})
+
+local Dropdown = Tab:CreateDropdown({
+    Name = "Teleport Psychic Area",
+    Options = {"1M+", "1B+", "1T+", "1Qa+", "333Qa+", "111Qi+", "33.3Sx+", "11.1Sp+", "3.36Oc+", "250Oc+", "1.11No+", "111Dc+", "55.5Ud+", "22.2Dd+" },
+    CurrentOption = {"Option 1"},
+    MultipleOptions = false,
+    Flag = "TeleportDropdown",
+    Callback = function(Option)
+        if Option[1] == "1M+" then
+            local pos = Vector3.new(-2534.12, 5489.83, -534.712)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "1B+" then
+            local pos = Vector3.new(-2565.63, 5506.36, -441.123)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+        if Option[1] == "1T+" then
+            local pos = Vector3.new(-2587.06, 5518.88, -503.619)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+        
+                if Option[1] == "1Qa+" then
+            local pos = Vector3.new(-2544.5, 5412.83, -488.805)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+
+                if Option[1] == "333Qa+" then
+            local pos = Vector3.new(-1833.05, 237.38, -3415.71)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+        
+
+                if Option[1] == "111Qi+" then
+            local pos = Vector3.new(-3995.75, 317.699, -3260.88)
+            local orientation = CFrame.new(0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 1, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos) * orientation
+        end
+        
+        
+        if Option[1] == "33.3Sx+" then
+            local pos = Vector3.new(-2428.64, 6021.77, 1084.64)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "11.1Sp+" then
+            local pos = Vector3.new(-2521.9, 87.5562, 591.635)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "3.36Oc+" then
+            local pos = Vector3.new(-139.188, 253.818, -420.304)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+        
+                if Option[1] == "3.36Oc+" then
+            local pos = Vector3.new(-139.188, 253.818, -420.304)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "250Oc+" then
+            local pos = Vector3.new(1851.91, 162.875, -3447.66)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "111Dc+" then
+            local pos = Vector3.new(-121.186, 3022.73, 199.096)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "55.5Ud+" then
+            local pos = Vector3.new(-2969.8, 24314.3, -222.585)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+
+        if Option[1] == "22.2Dd+" then
+            local pos = Vector3.new(-33542.4, 21554.1, -4314.51)
+            local cf = CFrame.new(pos.x, pos.y, pos.z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+        end
+    end,
+})
+
+function doLoopTeleport4()
+    while isLoopTeleportActive do
+        local currentOption = Dropdown.CurrentOption
+        Dropdown:Set(currentOption)
+        wait(5)
+    end
+end
+
+local Tab = Window:CreateTab("Visual") -- Title, Image
+
+
+local Button = Tab:CreateButton({
+    Name = "Infinite kill",
+    Callback = function()
+        game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.KilledTxt.Text = "Innocents Killed : 99999999 , Villains Killed : 99999999 , Heroes Killed : 99999999"
+    end,
+})
+
+local player = game:GetService("Players").LocalPlayer
+local FSTxt = player.PlayerGui.ScreenGui.MenuFrame.InfoFrame.FSTxt
+
+local Button = Tab:CreateButton({
+    Name = "Infinite Fist Strength",
+    Callback = function()
+        FSTxt.Text = "Fist Strength : 9999999999999999999999Ud"
+    end,
+})
+
+local player = game:GetService("Players").LocalPlayer
+local BTTxt = player.PlayerGui.ScreenGui.MenuFrame.InfoFrame.BTTxt
+
+local Button = Tab:CreateButton({
+    Name = "Infinite Body Toughness",
+    Callback = function()
+        BTTxt.Text = "Body Toughness: 9999999999999999999999Ud"
+    end,
+})
+
+local player = game:GetService("Players").LocalPlayer
+local MSTxt = player.PlayerGui.ScreenGui.MenuFrame.InfoFrame.MSTxt
+
+local Button = Tab:CreateButton({
+    Name = "Infinite Movement Speed",
+    Callback = function()
+        MSTxt.Text = "Movement Speed: 9999999999999999999999Ud"
+    end,
+})
+
+
+
+local Tab = Window:CreateTab("User Stats", 4483362458) -- Title, Image
+
+-- Define the paths to the GUI objects
+local paths = {
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.NameTxt",
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.RankTxt",
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.PPTxt",
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.BTTxt",
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.FSTxt",
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.JFTxt",
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.MSTxt",
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.CurrentGemImgBtn.InfoTxt",
+    "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.CurrentGemImgBtn.AmountTxtBtn"
+}
+
+-- Create the labels for each GUI object
+local labels = {}
+for i, path in ipairs(paths) do
+    labels[i] = Tab:CreateLabel("")
+end
+
+-- Function to update the labels
+local function updateLabels()
+    for i, path in ipairs(paths) do
+        local guiObject = loadstring("return " .. path)() -- Get the GUI object
+        labels[i]:Set(guiObject.Text) -- Set the text of the label to the text of the GUI object
+    end
+end
+
+-- Call the update function once to set the initial text
+updateLabels()
+
+-- Start a coroutine to update the labels every second
+spawn(function()
+    while true do
+        updateLabels()
+        wait(1)
+    end
+end)
+
